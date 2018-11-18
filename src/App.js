@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 
 
 class App extends Component {
-  state = {
-    cards: []
+  constructor() {
+    super();
+    this.state = {
+      cards: array(8).fill(
+        {matching: false,
+         matched: false,
+        }
+      ),
+    }
   }
   render() {
     return (
-      <div className="App">
+      <div>
         <h1>Memory Game</h1>
       </div>
     );
